@@ -23,10 +23,6 @@ export function UserList() {
     });
   }, [dispatch, users]);
 
-  useEffect(() => {
-    console.log(listUsers);
-  }, [listUsers]);
-
   return (
     <UserListContainer>
       {listUsers.length !== 0 ? (
